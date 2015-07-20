@@ -1,2 +1,9 @@
-# semantic-ui_templates
-Templates created in Semantic UI (Framework Front-End)
+#SEMANTIC UI TEMPLATES
+###Templates criado com o Semantic UI (Framework Front-End)
+---
+
+###Templates
+eSHOPPING - Administração de Loja Virtual
+
+###Autor:
+- [Yuri Matheus] (https://github.com/yurimatheus/)
