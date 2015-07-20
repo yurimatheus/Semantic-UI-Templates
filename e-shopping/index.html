@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Titulo -->
+	<title>eSHOPPING - Administração de Loja Virtual</title>
+	<!-- Standard Meta -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<!-- Google Web Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="assets/semantic.min.css">
+	<style type="text/css">
+		.ui.menu{margin: 0}
+		.grid{max-width: 100%}
+	</style>
+</head>
+
+<body>
+
+	<!-- ? -->
+	<div class="ui grid">
+
+		<div class="row">
+			
+			<!-- Header -->
+			<div class="sixteen wide column">
+				<div class="ui fixed black inverted menu">
+				  <a class="item" style="width:210px">
+				    <i class="shop icon"></i> eSHOPPING
+				  </a>
+				  <div class="right menu">
+				    <div class="item">
+						Loja Modelo
+				    </div>
+				    <a class="item">
+				      Gerência
+				    </a>
+				    <a class="item">
+				      Sair
+				    </a>
+			  	  </div>
+				</div>				
+			</div>
+			
+			<!-- Sidebar // style="margin-right:50px" -->
+			<div class="three wide column">
+				<div class="ui inverted sticky fixed vertical menu" style="border-radius:0; margin:35px 0 0 0; height:100%">
+				  <div class="header item">
+				    <i class="cubes icon"></i> Informações Básicas
+				  </div>
+				  <div class="item">
+				    Produto
+				    <div class="menu">
+				      <a class="item">Cadastrar</a>
+				      <a class="item">Coleção</a>
+				      <a class="item">Categoria</a>
+				      <a class="item">Subcategoria</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    Aplicativo
+				    <div class="menu">
+				      <a class="item">Configurações</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    Clientes
+				    <div class="menu">
+				      <a class="item">Visualizar</a>
+				    </div>
+				  </div>
+				  <div class="header item">
+				    <i class="bar chart icon"></i> Configurações
+				  </div>
+				  <div class="item">
+				    Frete
+				    <div class="menu">
+				      <a class="item">Configurações</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    Pagamento
+				    <div class="menu">
+				      <a class="item">Formas de Pagamento</a>
+				    </div>
+				  </div>
+				  <div class="item">
+				    Análise Inteligente
+				    <div class="menu">
+				      <a class="item">Google Analytics</a>
+				      <a class="item">Google Adwords Express</a>
+				    </div>
+				  </div>
+				  <div class="header item">
+				    <i class="user icon"></i> Perfil
+				  </div>
+				  <div class="item">
+				    Usuário
+				    <div class="menu">
+				      <a class="item">Meu Perfil</a>
+				      <a class="item">Dados Bancários</a>
+				      <a class="item">Sair</a>
+				    </div>
+				  </div>
+				</div>
+			</div> 
+
+			<!-- Conteudo -->
+			<div class="nine wide column" style="padding:80px 0 0 0">
+
+				<!-- Cadastrar -->
+				<h2>Cadastrar</h2>
+				<div class="ui divider"></div>
+				<!-- Informação Básica -->
+				<form class="ui form">
+				    <div class="two fields">
+					    <div class="field">
+					      <label>Coleção</label>
+					      <select class="ui search dropdown">
+					        <option value="">Selecione</option>
+					        <option value="ol">Outono Laranja 2015</option>
+					        <option value="ia">Inverno Azul 2015</option>
+					        <option value="v16">Verão Caliente 2016</option>
+					      </select>
+					    </div>
+					    <div class="field">
+						  	<label>Código</label>
+						  	<input type="text" placeholder="Ex.: 8989HDY37">
+					  	</div>
+				    </div>
+				    <div class="two fields">
+					    <div class="field">
+					      <label>Categoria</label>
+					      <select class="ui search dropdown">
+					        <option value="">Selecione</option>
+					        <option value="ol">Joías</option>
+					      </select>
+					    </div>
+					    <div class="field">
+						  	<label>Subcategoria</label>
+						  	<select class="ui search dropdown">
+						        <option value="">Selecione</option>
+						        <option value="ol">Romanel</option>
+						    </select>
+					  	</div>
+				    </div>
+				    <div class="two fields">
+					    <div class="field">
+					    	<label>Nome</label>
+					    	<div class="ui corner labeled input">
+						    	<input type="text" placeholder="Colar Azul Marine" name="preco_produto">
+						    	<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+					    </div>
+					  	<div class="field">
+					    	<label>Preço</label>
+					    	<div class="ui corner labeled input">
+						    	<div class="ui label">
+									R$
+								</div>
+						    	<input type="text" placeholder="99,99" name="preco_produto">
+						    	<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+					    	</div>
+					    </div>
+				    </div>
+				    <div class="two fields">
+				    	<!-- Imagem Destacada -->
+					  	<div class="field">
+					  		<label>Imagem Destacada</label>
+					  		<input type="file">
+					  	</div>
+					    <!-- Galeria de Fotos -->
+					  	<div class="field">
+					  		<label>Galeria</label>
+					  		<input type="file">
+							<!-- <div class="ui mini button"><i class="check icon"></i> Adicionar outra foto</div> -->
+					  	</div>
+				    </div>
+					<!-- Galeria de Fotos -->
+					<div class="field">
+						<label>Descrição</label>
+						<textarea></textarea>
+					</div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Cadastrar</div>
+				</form>
+
+				<!-- Visualização dos Produtos -->
+				<h2>Lista dos Produtos</h2>
+				<div class="ui divider"></div>
+				<div class="ui three doubling cards">
+				  <div class="card">
+				    <a class="image">
+				      <img src="assets/img/kit_blue.jpg">
+				    </a>
+				    <div class="content">
+				      <a class="header">Casamento Azul Elegante</a>
+				      <div class="meta">
+				        <span class="category">Conjunto</span>
+				        <span class="category">Ouro Branco</span>
+				        <span class="category">Straus</span>
+				      </div>
+				      <div class="description">
+				        Donec dignissim sem et urna fermentum, a lobortis eros dapibus. Donec finibus eros id dolor lacinia, quis egestas augue congue.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <a class="image">
+				      <img src="assets/img/alianca_ouro_branco.jpg">
+				    </a>
+				    <div class="content">
+				      <a class="header">Par de Alianças em Ouro Branco e Amarelo 18K</a>
+				      <div class="meta">
+				        <span class="category">Aliança</span>
+				        <span class="category">Ouro Branco</span>
+				      </div>
+				      <div class="description">
+				        Gravação Grátis. Peso Médio:14,5 Gramas. Largura:6 Mm. Gemas:26 Pedras De 1 Ponto Com Lapidação Brilhante Na Feminina Classificação Vs1-i. Acabamento: Polido 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="card">
+				    <a class="image">
+				      <img src="assets/img/bolsa_chanel.jpg">
+				    </a>
+				    <div class="content">
+				      <a class="header">Bolsa Canvas Cambon Chanel</a>
+				      <div class="meta">
+				        <span class="category">Bolsa</span>
+				        <span class="category">Chanel</span>
+				        <span class="category">Réplica</span>
+				      </div>
+				      <div class="description">
+				        Categoria: Réplica AAA. Material: Couro legítimo e tecido. Qualidade: AAA. Medidas: 51 cm de largura e 32 cm de altura.Acompanha saquinho protetor e certificados de autenticidade.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- Coleção -->
+				<h2>Coleção</h2>
+				<div class="ui divider"></div>
+				<!-- Informação Básica -->
+				<form class="ui form">
+				    <div class="field">
+					  	<label>Nome</label>
+					  	<input type="text" placeholder="Ex.: Inverno 2015 ou Bvlgari Gold">
+				  	</div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Cadastrar</div>
+				</form>
+
+				<!-- Categoria -->
+				<h2>Categoria</h2>
+				<div class="ui divider"></div>
+				<!-- Informação Básica -->
+				<form class="ui form">
+				    <div class="field">
+					  	<label>Nome</label>
+					  	<input type="text" placeholder="Ex.: Semi Jóias">
+				  	</div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Cadastrar</div>
+				</form>
+
+				<!-- Subcategoria -->
+				<h2>Subcategoria</h2>
+				<div class="ui divider"></div>
+				<!-- Informação Básica -->
+				<form class="ui form">
+				    <div class="two fields">
+				    	<div class="field">
+						  	<label>Categoria</label>
+						  	<select class="ui search dropdown">
+						       <option value="">Selecione</option>
+						       <option value="ol">Ouro</option>
+						       <option value="ia">Semi Jóias</option>
+						    </select>
+					  	</div>
+					  	<div class="field">
+					  		<label>Nome</label>
+					  		<input type="text" placeholder="Ex.: Alianças">
+					  	</div>
+				    </div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Cadastrar</div>
+				</form>
+
+				<!-- Aplicativo -->
+				<h2>Aplicativo</h2>
+				<div class="ui divider"></div>
+				<div class="ui floating message">
+				  <div class="header">Informações</div>
+				  <p>Personalize sua loja de acordo com a sua necessidade!</p>
+				</div>
+				<form class="ui form">
+				  <div class="two fields">
+				  	<div class="field">
+					    <label>Tema</label>
+					    <select class="ui search dropdown">
+					       <option value="">Selecione</option>
+					       <option value="ol">Amarelo</option>
+					       <option value="ia">Azul</option>
+					    </select>
+					</div>
+					<div class="field">
+						<label>Logotipo ou Marca da Empresa</label>
+						<input type="file">
+					</div>
+				  </div>
+				  <!-- Cadastro -->
+				  <div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+				<!-- Clientes -->
+				<h2>Clientes</h2>
+				<div class="ui divider"></div>
+				<div class="ui red icon message">
+				  <i class="notched heart icon"></i>
+				  <div class="content">
+				    <div class="header">
+				      Perfil do Cliente
+				    </div>
+				    <p>Conheça as informações básicas do seu cliente.</p>
+				  </div>
+				</div>
+				<table class="ui five red column table">
+				  <thead>
+				    <tr><th>Name</th>
+				    <th>Status</th>
+				    <th>Age</th>
+				    <th>Gender</th>
+				    <th>Notes</th>
+				  </tr></thead>
+				  <tbody>
+				    <tr>
+				      <td>John</td>
+				      <td>Approved</td>
+				      <td>22</td>
+				      <td>Male</td>
+				      <td>None</td>
+				    </tr>
+				    <tr>
+				      <td>Jamie</td>
+				      <td>Approved</td>
+				      <td>32</td>
+				      <td>Male</td>
+				      <td>Requires call</td>
+				    </tr>
+				    <tr>
+				      <td>Jill</td>
+				      <td>Denied</td>
+				      <td>22</td>
+				      <td>Female</td>
+				      <td>None</td>
+				    </tr>
+				  </tbody>
+				  <tfoot>
+				    <tr><th>3 People</th>
+				    <th>2 Approved</th>
+				    <th></th>
+				    <th></th>
+				    <th></th>
+				  </tr></tfoot>
+				</table>
+
+				<!-- Frete -->
+				<h2>Frete</h2>
+				<div class="ui divider"></div>
+				<div class="ui info floating message">
+				  <div class="header">Informações</div>
+				  <p>Olá <strong>$usuario</strong>, por favor selecione os países/estados que sua loja irá atender.</p>
+				</div>
+				<form class="ui form">
+				  <div class="field">
+				    <label>País</label>
+				    <select class="ui search dropdown">
+				      <option value="AF"><i class="afghanistan flag"></i> Afeganistão</option>
+				      <option value="AX">...e outros!</option>
+				    </select>
+				  </div>
+				  <!-- Cadastro -->
+				  <div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+				<!-- Pagamento -->
+				<h2>Pagamento</h2>
+				<div class="ui divider"></div>
+				<form class="ui form">
+					<!-- ? -->
+					<div class="ui floating message">
+					  <div class="header">Informações</div>
+					  <p>Oi, tudo bem? Seja bem vindo a seção de pagamento, aqui você poderá ter uma ideia de quanto custa cada transação que seu cliente paga para você.</p>
+						<table class="ui definition table">
+						  <thead>
+						    <tr>
+						    <th></th>
+						    <th>Gateway de Pagamento</th>
+						    <th>Valor por transação</th>
+						    <th>Operadora de Cartão</th>
+						  	</tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>Boleto</td>
+						      <td>1,6%</td>
+						      <td>R$ 5,80</td><!-- adicionar 0,20 a mais -->
+						      <td>Isento</td>
+						    </tr>
+						    <tr>
+						      <td>Cartão de Crédito</td>
+						      <td>R$ 3,45</td>
+						      <td>R$ 3,50</td>
+						      <td>x%</td>
+						    </tr>
+						  </tbody>
+						</table>
+					  <div class="ui divider"></div>
+					  <p><strong>Bandeiras:</strong></p>
+					  	<i class="orange mastercard big icon"></i>
+					  	<i class="blue american express big icon"></i>
+					  	<i class="orange visa big icon"></i>
+					  	<i class="blue paypal big icon"></i>
+					</div>
+					<!-- ? -->
+					<div class="ui info floating message">
+					  <div class="header">Conheça outras formas de pagamento!</div>
+					  <p>Caso deseje expandir as <em>Formas de Pagamento</em> clique abaixo e conheça mais outras formas de pagamento: Discovery, Google Wallet, Paypal e Apple Pay.</p>
+					</div>
+					<!-- Cartões -->
+					<div class="field">
+						<label>Selecione outras formas de pagamento</label>
+						<div class="six fluid ui icon buttons">
+						  <div class="ui button" data-content="American Express"><i class="orange discover big icon"></i></div>
+						  <div class="ui button" data-content="Paypal Card"><i class="blue paypal card big icon"></i></div>
+						  <div class="ui button" data-content="Google Wallet"><i class="red google wallet big icon"></i></div>
+						  <div class="ui button" data-content="Paypal"><i class="blue paypal big icon"></i></div>
+						  <div class="ui button" data-content="Android Pay"><i class="green android big icon"></i></div>
+						  <div class="ui button" data-content="Apple iPay"><i class="apple big icon"></i></div>
+						</div>
+					</div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+				<!-- Análise Inteligente -->
+				<h2>Análise Inteligente</h2>
+				<div class="ui divider"></div>
+				<div class="ui success floating message">
+				  <div class="header">O que é a Analise Inteligente?</div>
+				  <p>Serviço para análise inteligente para geração de novas oportunidades, por isso usamos o Google Adwords Express e Google Analytics.</p>
+				  <p>O <strong>Google Analytics</strong> é um serviço gratuito que a Google oferece para todos onde é possível analisar os dados de quem acessa, o que acessa e o horário que acessa, isso lhe ajuda a tomar a decisão mais acertada sobre seu conteúdo.</p>
+				  <p>O <strong>Google Adwords Express</strong> é um serviço pago que te ajuda a ser encontrado por clientes no exato momento em que eles pesquisarem no Google pelo que você oferece. Além disso, pague somente quando eles clicarem para visitar seu site ou ligarem para sua empresa.</p>
+				</div>
+				<form class="ui form">
+				    <div class="two fields">
+					    <div class="field">
+						  	<label>Código do Google Analytics</label>
+						  	<input type="text" placeholder="Ex.: 8989HDY37">
+					  	</div>
+					    <div class="field">
+						  	<label>Código do Google Adwords Express</label>
+						  	<input type="text" placeholder="Ex.: 8989HDY37">
+					  	</div>
+				    </div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+				<!-- Meu Perfil -->
+				<h2>Meu Perfil</h2>
+				<div class="ui divider"></div>
+				<form class="ui form">
+					<div class="two fields">
+						<div class="field">
+							<label>Marca ou Logotipo</label>
+							<input type="file">
+						</div>
+						<div class="field">
+							<label>Razão Social</label>
+							<div class="ui corner labeled input">
+								<input type="text">
+								<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="two fields">
+						<div class="field">
+							<label>Nome Fantasia</label>
+							<input type="text">
+						</div>
+						<div class="field">
+							<label>CNPJ</label>
+							<div class="ui corner labeled input">
+								<input type="text">
+								<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="field">
+						<label>Endereço</label>
+						<input type="text">
+					</div>
+					<div class="two fields">
+						<div class="field">
+							<label>Telefone de Contato</label>
+							<div class="ui corner labeled input">
+								<input type="text">
+								<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+						</div>
+						<div class="field">
+							<label>Whatsapp ou Outro Telefone de Contato</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="two fields">
+						<div class="field">
+							<label>Site</label>
+							<div class="ui corner labeled input">
+								<input type="text">
+								<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+						</div>
+						<div class="field">
+							<label>E-mail de Contato</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="two fields">
+						<div class="field">
+							<label>Instagram</label>
+							<input type="text">
+						</div>
+						<div class="field">
+							<label>Facebook</label>
+							<input type="text">
+						</div>
+					</div>
+					<div class="field">
+						<label>Fale um pouco mais sobre sua loja</label>
+						<div class="ui corner labeled input">
+							<textarea></textarea>
+							<div class="ui corner label">
+								<i class="red asterisk icon"></i>
+						  	</div>
+					  	</div>
+					</div>
+				<!-- Cadastro -->
+				<div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+				<!-- Dados Bancários -->
+				<h2>Dados Bancários</h2>
+				<div class="ui divider"></div>
+				<!-- ? -->
+				<div class="ui info floating message">
+				  <div class="header">Como receber o pagamento?</div>
+				  <p>Por favor digite seus dados bancários que estarão sobe sigilo de acordo com a <a href="#">Política de Sergurança e Privacidade</a>. Após cadastramento iremos ligar para você para confirmarmos!</p>
+				</div>
+				<!-- Informação Básica -->
+				<form class="ui form">
+				    <div class="two fields">
+				    	<div class="field">
+						  	<label>Banco</label>
+						  	<select class="ui search dropdown">
+						       <option value="">Selecione</option>
+						       <option value="ol">Banco do Brasil</option>
+						       <option value="ia">Bradesco</option>
+						    </select>
+					  	</div>
+					  	<div class="field">
+						  	<label>Agência</label>
+						  	<div class="ui corner labeled input">
+							  	<input type="text">
+							  	<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+					  	</div>
+				    </div>
+				    <div class="two fields">
+				    	<div class="field">
+						  	<label>Nome</label>
+						  	<input type="text" placeholder="Ex.: Felipe Joaquim Santana Barbosa">
+					  	</div>
+					  	<div class="field">
+						  	<label>Número da Conta</label>
+						  	<div class="ui corner labeled input">
+							  	<input type="text">
+							  	<div class="ui corner label">
+									<i class="red asterisk icon"></i>
+							  	</div>
+						  	</div>
+					  	</div>
+				    </div>
+				  	<!-- Cadastro -->
+				    <div class="ui green submit button"><i class="check icon"></i> Salvar</div>
+				</form>
+
+			</div>
+
+			<!-- Visualização dos Últimos Produtos -->
+			<div class="four wide column" style="padding:80px 0 0 35px; margin:0;" >
+				<div class="ui icon message">
+					<div class="header">
+						<h3><i class="browser icon"></i> Últimos Produtos</h3>
+					</div>
+					<br>
+					<div class="ui cards">
+					  <div class="card">
+					    <div class="content">
+					      <div class="header">Casamento Azul Elegante</div>
+					      <div class="meta">Conjunto, Ouro Branco, Staus</div>
+					      <div class="description">
+					        Donec dignissim sem et urna fermentum, a lobortis eros dapibus. Donec finibus eros id dolor lacinia, quis egestas augue congue.
+					      </div>
+					    </div>
+					    <div class="extra content">
+					      <div class="ui two buttons">
+					        <div class="ui basic green button"><i class="edit icon"></i> Alterar</div>
+					        <div class="ui basic red button"><i class="close icon"></i> Excluir</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="content">
+					      <div class="header">Par de Alianças em Ouro Branco e Amarelo 18K</div>
+					      <div class="meta">Aliança, Ouro Branco</div>
+					      <div class="description">
+					        Gravação Grátis. Peso Médio:14,5 Gramas. Largura:6 Mm. Gemas:26 Pedras De 1 Ponto Com Lapidação Brilhante Na Feminina Classificação Vs1-i. Acabamento: Polido
+					      </div>
+					    </div>
+					    <div class="extra content">
+					      <div class="ui two buttons">
+					        <div class="ui basic green button"><i class="edit icon"></i> Alterar</div>
+					        <div class="ui basic red button"><i class="close icon"></i> Excluir</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <div class="content">
+					      <div class="header">Bolsa Canvas Cambon Chanel</div>
+					      <div class="meta">Bolsa, Chanel, Réplica</div>
+					      <div class="description">
+					        Categoria: Réplica AAA. Material: Couro legítimo e tecido. Qualidade: AAA. Medidas: 51 cm de largura e 32 cm de altura.Acompanha saquinho protetor e certificados de autenticidade.
+					      </div>
+					    </div>
+					    <div class="extra content">
+					      <div class="ui two buttons">
+					        <div class="ui basic green button"><i class="edit icon"></i> Alterar</div>
+					        <div class="ui basic red button"><i class="close icon"></i> Excluir</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div> 
+
+		</div><!-- row -->
+
+	</div><!-- ui.grid -->
+
+</body>
+
+</html>
