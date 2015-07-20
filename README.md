@@ -1,5 +1,5 @@
-#SEMANTIC UI TEMPLATES
-###Templates criado com o Semantic UI (Framework Front-End)
+#SUI Templates
+Templates criado com o Semantic UI (Framework Front-End)
 ---
 
 ###Templates
