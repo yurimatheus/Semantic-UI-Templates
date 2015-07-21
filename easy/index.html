@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <!-- Header -->
+    <head>
+        <!-- App Title -->
+        <title>EASY - Administração da Aplicação</title>
+        <!-- MetaTags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.1/semantic.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="ui grid">
+            <div class="row">
+                <div class="sixteen wide column">
+                    <!-- 
+
+                        >> Navbar 
+                           - Para mudar a cor do 'Navbar', troque a class "orange" por qualquer uma dessas abaixo:
+
+                            - red            
+                            - orange         
+                            - yellow         
+                            - olive          
+                            - green          
+                            - teal           
+                            - blue           
+                            - violet         
+                            - purple         
+                            - pink           
+                            - brown          
+                            - grey           
+                            - black
+
+                    -->
+                    <div class="ui fixed inverted orange menu">
+                        <a href="#" class="header item">
+                          EASY
+                        </a>
+                        <div class="right menu">
+                          <a class="item">
+                            Empresa Modelo
+                          </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="two wide column">
+                    <!-- Sidebar Interno -->
+                    <div class="ui vertical fixed menu" style="margin-top:40px">
+                      <div class="item">
+                        <img class="ui avatar image" src="assets/elliot.jpg" alt="#">
+                        <span>Alexander Fábio</span>
+                        <br>
+                        <div class="extra" style="margin:10px 0 0 30px">
+                            <div class="ui label">Administrador</div>
+                        </div>
+                      </div>
+                      <a class="item">
+                        Gerência
+                      </a>
+                      <div class="item">
+                        Informação
+                        <div class="menu">
+                            <a class="item">Departamentos</a>
+                            <a class="item">Usuários x Departamentos</a>
+                            <a class="item">Monitor de Manifestações</a>
+                        </div>
+                      </div>
+                      <a class="item">
+                        Relatórios
+                      </a>
+                      <a class="item">
+                        Meu Perfil
+                      </a>
+                      <a class="item">
+                        Suporte
+                      </a>
+                    </div>  
+                </div>
+                
+                <div class="thirteen wide column">
+                    
+                    <!-- Content-->
+                    <section class="article" style="margin:80px 0 0 50px">
+                            
+                        <div class="ui">
+                            
+                            <!-- Box 01 -->
+                            <div id="box_default_01" style="margin: 40px 0 0 0">
+                                <!-- Breadcrumb -->
+                                <div class="ui breadcrumb">
+                                    <a class="section">Página Principal</a>
+                                    <i class="right chevron icon divider"></i>
+                                    <a class="active section">Gerência</a>
+                                </div>
+                                <h2>Gerência</h2>
+                                <div class="ui divider"></div>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <!-- Box Interno 01 -->
+                                        <div class="eight wide column">
+                                            <div class="ui message">
+                                                <div class="header">
+                                                    <i class="add icon"></i> Cadastro
+                                                    <div class="ui divider"></div>
+                                                </div>
+                                                <!-- Formulario de Filtro -->
+                                                <form class="ui form">
+                                                    <div class="two fields">
+                                                    <div class="field">
+                                                      <label>Código</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="field">
+                                                        <label>Nome</label>
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                                    <div class="two fields">
+                                                        <div class="field">
+                                                          <label>Disponível para</label>
+                                                          <select class="ui search dropdown">
+                                                            <option value="">Selecione</option>
+                                                            <option value="ol">Opção 01</option>
+                                                          </select>
+                                                        </div>
+                                                       <div class="field">
+                                                          <label>Disponível para</label>
+                                                          <select class="ui search dropdown">
+                                                            <option value="">Selecione</option>
+                                                            <option value="ol">Opção 01</option>
+                                                          </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="two field">
+                                                    <label>Prazo em "Dias" da Resposta do Ouvidoria</label>
+                                                    <input type="text" >
+                                                </div>
+                                                <div class="ui divider"></div>
+                                                <!-- Cadastro -->
+                                                <div class="ui reset button"><i class="eraser icon"></i> Limpar Campos</div>
+                                                <!-- Cadastro -->
+                                                <div class="ui orange submit button"><i class="check icon"></i> Cadastrar</div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- Box Interno 02 -->
+                                        <div class="eight wide column">
+                                            <div class="ui message">
+                                                <div class="header">
+                                                    <i class="search icon"></i> Consulta
+                                                    <div class="ui divider"></div>
+                                                </div>
+                                                <!-- Tabela dos Documentos Recentes -->
+                                                <table class="ui very basic table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Código</th>
+                                                        <th>Descrição</th>
+                                                        <th>Sistema</th>
+                                                        <th></th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>59</td>
+                                                        <td>Administração</td>
+                                                        <td>Ambos</td>
+                                                        <td><i class="eye icon"></i></td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                        </div>
+                                        <!-- Box Interno 03 -->
+                                        <div class="eight wide column" style="margin: 30px 0 0 0">
+                                            <div class="ui message">
+                                                <div class="header">
+                                                    <i class="add icon"></i> Cadastro
+                                                    <div class="ui divider"></div>
+                                                </div>
+                                                <!-- Formulario de Filtro -->
+                                                <form class="ui form">
+                                                    <div class="two fields">
+                                                    <div class="field">
+                                                      <label>Código</label>
+                                                      <input type="text">
+                                                    </div>
+                                                    <div class="field">
+                                                        <label>Nome</label>
+                                                        <input type="text">
+                                                    </div>
+                                                </div>
+                                                    <div class="two fields">
+                                                        <div class="field">
+                                                          <label>Disponível para</label>
+                                                          <select class="ui search dropdown">
+                                                            <option value="">Selecione</option>
+                                                            <option value="ol">Opção 01</option>
+                                                          </select>
+                                                        </div>
+                                                       <div class="field">
+                                                          <label>Disponível para</label>
+                                                          <select class="ui search dropdown">
+                                                            <option value="">Selecione</option>
+                                                            <option value="ol">Opção 01</option>
+                                                          </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="two field">
+                                                    <label>Prazo em "Dias" da Resposta do Ouvidoria</label>
+                                                    <input type="text" >
+                                                </div>
+                                                <div class="ui divider"></div>
+                                                <!-- Cadastro -->
+                                                <div class="ui reset button"><i class="eraser icon"></i> Limpar Campos</div>
+                                                <!-- Cadastro -->
+                                                <div class="ui orange submit button"><i class="check icon"></i> Cadastrar</div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- Box Interno 04 -->
+                                        <div class="eight wide column" style="margin: 30px 0 0 0">
+                                            <div class="ui message">
+                                                <div class="header">
+                                                    <i class="search icon"></i> Consulta
+                                                    <div class="ui divider"></div>
+                                                </div>
+                                                <!-- Feed // Mensagens -->
+                                                
+                                                <div class="ui feed">
+                                                  <div class="event">
+                                                    <div class="label">
+                                                      <img src="assets/elliot.jpg">
+                                                    </div>
+                                                    <div class="content">
+                                                      <div class="summary">
+                                                        <a class="user">
+                                                          Elliot Fu
+                                                        </a> added you as a friend
+                                                        <div class="date">
+                                                          1 Hour Ago
+                                                        </div>
+                                                      </div>
+                                                      <div class="meta">
+                                                        <a class="like">
+                                                          <i class="like icon"></i> 4 Likes
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="event">
+                                                    <div class="label">
+                                                      <img src="assets/helen.jpg">
+                                                    </div>
+                                                    <div class="content">
+                                                      <div class="summary">
+                                                        <a>Helen Troy</a> added <a>2 new illustrations</a>
+                                                        <div class="date">
+                                                          4 days ago
+                                                        </div>
+                                                      </div>
+                                                      <div class="extra images">
+                                                        <a><img src="assets/image.png"></a>
+                                                        <a><img src="assets/image.png"></a>
+                                                      </div>
+                                                      <div class="meta">
+                                                        <a class="like">
+                                                          <i class="like icon"></i> 1 Like
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="event">
+                                                    <div class="label">
+                                                      <img src="assets/jenny.jpg">
+                                                    </div>
+                                                    <div class="content">
+                                                      <div class="summary">
+                                                        <a class="user">
+                                                          Jenny Hess
+                                                        </a> added you as a friend
+                                                        <div class="date">
+                                                          2 Days Ago
+                                                        </div>
+                                                      </div>
+                                                      <div class="meta">
+                                                        <a class="like">
+                                                          <i class="like icon"></i> 8 Likes
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="event">
+                                                    <div class="label">
+                                                      <img src="assets/joe.jpg">
+                                                    </div>
+                                                    <div class="content">
+                                                      <div class="summary">
+                                                        <a>Joe Henderson</a> posted on his page
+                                                        <div class="date">
+                                                          3 days ago
+                                                        </div>
+                                                      </div>
+                                                      <div class="extra text">
+                                                        Ours is a life of constant reruns. We're always circling back to where we'd we started, then starting all over again. Even if we don't run extra laps that day, we surely will come back for more of the same another day soon.
+                                                      </div>
+                                                      <div class="meta">
+                                                        <a class="like">
+                                                          <i class="like icon"></i> 5 Likes
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="event">
+                                                    <div class="label">
+                                                      <img src="assets/justen.jpg">
+                                                    </div>
+                                                    <div class="content">
+                                                      <div class="summary">
+                                                        <a>Justen Kitsune</a> added <a>2 new photos</a> of you
+                                                        <div class="date">
+                                                          4 days ago
+                                                        </div>
+                                                      </div>
+                                                      <div class="extra images">
+                                                        <a><img src="assets/image.png"></a>
+                                                        <a><img src="assets/image.png"></a>
+                                                      </div>
+                                                      <div class="meta">
+                                                        <a class="like">
+                                                          <i class="like icon"></i> 41 Likes
+                                                        </a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </body>
+  
+    <!-- Footer -->
+    <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.1/components/transition.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.1/components/dropdown.min.js"></script>
+
+    <script>
+        //$('.ui.dropdown').dropdown('show'); 
+    </script>
+   
+</html>
