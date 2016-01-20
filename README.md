@@ -3,10 +3,10 @@ Templates criados com o Semantic UI (Framework Front-End)
 ---
 
 ###Templates
-eSHOPPING - Administração de Loja Virtual
-Easy - Dashboard simples para qualquer tipo de aplicação.
-
-Obs.: Todos os projetos acima estão na versão alpha. 
+- **eSHOPPING** - Dashboard de Loja Virtual
+- **Easy** - Dashboard Simples
+- **Expo Semantic UI** - Site/Portfólio
+- **Landing Page** para Aplicativos
 
 ###Autor:
-- [Yuri Matheus] (https://github.com/yurimatheus/)
+- [Yuri Matheus] (mailto:ymatheusdesign@gmail.com)
